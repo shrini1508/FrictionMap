@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>FrictionMap</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>FrictionMap</h1>
+
+        <p>
+            Analyze your process and identify friction points.
+        </p>
+
+
+        <label>Process Name</label>
+
+        <input
+            type="text"
+            id="processName"
+            placeholder="Enter process name"
+        >
+
+
+        <label>Steps</label>
+
+        <textarea
+            id="steps"
+            placeholder="Enter each step on a new line"
+        ></textarea>
+
+
+        <button onclick="analyzeProcess()">
+            Analyze Process
+        </button>
+
+
+        <!-- ANALYSIS RESULT -->
+
+        <div id="result"></div>
+
+
+        <!-- ANALYSIS HISTORY -->
+
+        <div id="history"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
